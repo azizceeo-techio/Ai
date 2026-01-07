@@ -1,6 +1,5 @@
 // API endpoint (change this later when you deploy to a server)
-const API_URL = 'http://localhost:5000/api';
-
+const API_URL = 'https://ai-5tif.vercel.app/api';
 let selectedModel = null;
 let allModels = [];
 
