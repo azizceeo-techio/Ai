@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚀 AI Model Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>🚀 AI Model Platform</h1>
+            <p>Use any AI model from your phone - no setup needed!</p>
+        </header>
+
+        <!-- Model Selection -->
+        <section class="model-selection">
+            <h2>Choose an AI Model</h2>
+            <div id="model-list" class="model-grid">
+                <!-- Models will be loaded here by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Input Section -->
+        <section class="input-section" id="input-section" style="display: none;">
+            <h2 id="selected-model-name">Selected Model</h2>
+            <p id="selected-model-desc">Description</p>
+            
+            <textarea 
+                id="user-input" 
+                placeholder="Enter your text here..."
+                rows="5"
+            ></textarea>
+            
+            <button id="run-btn" onclick="runModel()">🔥 Run Model</button>
+            <button id="back-btn" onclick="showModelSelection()">← Back to Models</button>
+        </section>
+
+        <!-- Results Section -->
+        <section class="results-section" id="results-section" style="display: none;">
+            <h2>✨ Results</h2>
+            <div id="results-output" class="results-box"></div>
+            <button onclick="showInputSection()">🔄 Try Again</button>
+            <button onclick="showModelSelection()">← Back to Models</button>
+        </section>
+
+        <!-- Loading Indicator -->
+        <div id="loading" style="display: none;">
+            <div class="spinner"></div>
+            <p>AI is thinking...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
